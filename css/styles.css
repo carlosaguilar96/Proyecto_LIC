@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&dislay=swap');
+
+*{
+   font-family: 'Sriracha', cursive;
+   box-sizing: border-box;
+}
+
+body{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-image: url(../img/Fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+#idContenedorMenu{
+    max-width: 1024px;
+}
+
+#claContenedorCol{
+    background: rgb(15, 75, 28) url(../img/background.png);
+    max-width: 1024px;
+    max-height: 80px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: darkslategray;
+    opacity: 0.7;
+}
+
+#ImgFondoPortada{
+    border-style: solid;
+    border-color: antiquewhite;
+    border-width: 2px;
+    height: 200px;
+    width: 1024px;
+
+}
+
+.AnchoContenedores{
+    width: 1024px;
+}
+
+#ImgGrande{
+    box-shadow: 0px 0px 30px -10px rgba(150, 248, 194, 0.67);
+    margin-top: -190px;
+}
+
+.MenNavegacion:hover{
+        background: rgb(77, 167, 117);
+       -webkit-box-shadow: 0px 0px 30px -10px rgba(0,0,0,0.8);
+       -moz-box-shadow: 0px 0px 30px -10px rgba(0,0,0,0.8);
+       box-shadow: 0px 0px 30px -10px rgba(0,0,0,0.8);
+       transition: all .1s ease-in-out;
+       border-radius: 3px;
+       border-width: 8px;
+}
+
+.MenNavegacion{
+    background: rgb(224, 255, 255);
+    border-radius: 3px;
+}
+
+.MenTexto{
+    text-shadow: 1px 1px 1px rgb(37, 46, 46);
+    text-decoration: none;
+    color: rgb(41, 59, 41);
+}
+
+.pieTexto{
+    text-shadow: 1px 1px 1px rgb(82, 121, 121);
+    text-decoration: none;
+    color: rgb(203, 255, 203);
+}
+
+
+#idContInicio{
+
+    border-radius: 5px;
+}
+
+#carouselExampleIndicators0{
+    border-style: solid;
+    border-width: 1px;
+}
+
+.subir-contenedor{
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 3.3rem;
+    height: 3.3;
+    z-index: -1;
+}
+
+.subir-boton{
+    width: 0rem;
+    height:0rem;
+    background: #4c9468;
+    border-radius: 50%;
+    cursor:pointer;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: 0.7;
+}
+
+.subir-boton i{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: normal;
+    position: absolute;
+    font-size: 1.7rem;
+    top:48%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    color:#fff;
+    transition: .2s;
+}
+
+.Mostrar{
+    z-index: 10;
+}
+
+.Mostrar .subir-boton{
+    animation: popup .3s ease-in-out;
+    width: 3.3rem;
+    height: 3.3rem;
+    z-index: 11;
+}
+
+.Mostrar i{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+@keyframes popup{
+    0%{
+        width: 0rem;
+        height: 0rem;
+    }
+    50%{
+        width: 4rem;
+        height: 4rem;
+    }
+    100%{
+        width: 3.3rem;
+        height: 3.3rem;
+    }
+}
+
+#PieInicio{
+    background-color: #222724;
+}
+
+#contDestinos button{
+    background-color: rgb(224, 255, 255);
+}
+
+#contDestinos .active{
+    background-color: rgb(77, 167, 117);
+}
+
+#contDestinos button:hover{
+    background-color: rgb(77, 167, 117);
+    color: white;
+}
+
+#contInformacion h1{
+    text-align: center;
+}
+
+#contInformacion p{
+    text-align: justify;
+}
+
+#titleDestinos{
+    text-align: center;
+    font-size: xx-large
+}
+
+#contInformacion #descripcionIMG1, #contInformacion #descripcionIMG2{
+    font-size: small;
+    background-color: rgba(77, 167, 118, 0.623);
+    text-align: center;
+}
+
+#intro,#p1,#p2,#p3,#p4,#p5,#p6{
+    font-size:medium;
+}
+
+#botonEnviar{
+    background-color: rgb(77, 167, 117);
+    border: none;
+}
+
+#btnEnviar{
+    background-color: rgb(77, 167, 117);
+    border: none;
+}
+
+#AgregarComentario{
+    background-color: rgb(77, 167, 117);
+    border: none;
+}
+
+#idContComentarios h3{
+    text-align: center;
+}
+
+#idFechaC{
+    font-size:small;
+    font-weight:lighter;
+    color: gray;
+}
+/*Aca comienza el pie de pagina*/
+
+.MenPie{
+    text-shadow: 1px 1px 1px rgb(116, 148, 148);
+    text-decoration: none;
+    color: rgb(45, 148, 45);
+}
+.btnPie:hover{
+    background: rgb(77, 167, 117);
+    -webkit-box-shadow: 0px 0px 30px -10px rgba(0,0,0,0.8);
+    -moz-box-shadow: 0px 0px 30px -10px rgba(0,0,0,0.8);
+    box-shadow: 0px 0px 30px -10px rgba(0,0,0,0.8);
+    transition: all .1s ease-in-out;
+    border-radius: 3px;
+    border-width: 8px;
+}
+
+
